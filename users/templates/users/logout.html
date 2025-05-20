@@ -4,11 +4,14 @@
 <h2> You Have Been Logged Out! </h2>
 
 <div class="border-top pt-3">
+    <small class="text-muted">
+        Already have an account? <a href="{% url 'login' %}">Logi In Again</a>
+    </small>
+</div>
 
-            <small class="text-muted">
-                Already have an account? <a href="{% url 'login' %}">Logi In Again</a>
-            </small>
-        </div>
-  
+<!-- New Feature: Return to Home Button -->
+<div class="mt-3">
+    <a href="{% url 'blog-home' %}" class="btn btn-outline-primary btn-sm">Return to Home</a>
+</div>
 
 {% endblock content %}
